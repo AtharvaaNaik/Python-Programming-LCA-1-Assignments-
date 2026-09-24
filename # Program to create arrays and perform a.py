@@ -31,4 +31,15 @@ def display_matrix(matrix, name):
         print(row)
 
 
-# ---------------- Main
+# ---------------- Main ----------------
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+matrix1 = create_matrix(rows, cols, "Matrix 1")
+matrix2 = create_matrix(rows, cols, "Matrix 2")
+
+result = add_matrices(matrix1, matrix2, rows, cols)
+
+display_matrix(matrix1, "Matrix 1")
+display_matrix(matrix2, "Matrix 2")
+display_matrix(result, "Sum of Matrices")
